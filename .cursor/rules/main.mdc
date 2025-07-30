@@ -1,0 +1,116 @@
+---
+description: Python LeetCode Project Rules
+globs:
+  - "problems/*.py"
+  - "tests/test_*.py"
+alwaysApply: true
+---
+
+# Instructions
+
+This repository follows specific coding conventions and project structures. Please adhere to the following guidelines when generating a new LeetCode exercise.
+
+## Function Implementation Guidelines
+
+-   **File Creation:**
+    -   Create a new Python file in the `problems/` folder with the format `problem_<NUMBER>.py`.
+    -   The `<NUMBER>` is a LeetCode problem/exercise number.
+    -   The file should contain only the function signature (shell function) using Python's type hints and a `pass` statement for the body.
+    -   If the problem requires a helper class like `ListNode` or `TreeNode`, please define the class in the same file, typically before the main function.
+    -   ⚠️ **Important:** If an AI assistant suggests a full implementation, please remove it and leave only the shell function with `pass`.
+
+## Docstring Documentation
+
+-   Each function should start with a **docstring** (`"""..."""`) immediately following the function signature, as per PEP 257.
+-   Ensure the docstring includes:
+    -   The problem name in the format: `<Number>. <Name>`.
+    -   The URL of the problem on LeetCode.
+    -   A line with the problem's **Difficulty Level**.
+    -   A brief description of what the function is intended to solve.
+    -   A section for **Algorithm**, **Time Complexity**, and **Space Complexity**.
+        -   Indicate these as:
+            ```python
+            """
+            Algorithm: To be implemented
+            Time Complexity: To be implemented
+            Space Complexity: To be implemented
+            """
+            ```
+        -   ⚠️ Do not write the actual solution or analysis at creation time—just placeholders.
+    -   Use Python's **type hints** in the function signature for parameter and return types (e.g., `def two_sum(self, nums: list[int], target: int) -> list[int]:`).
+
+---
+
+## Testing Guidelines
+
+-   **Test File:**
+    -   Create a corresponding test file in the `tests/` folder named `test_<NUMBER>.py`.
+    -   The test file should be fully implemented using `pytest` and include multiple test cases.
+    -   Use meaningful test function names (e.g., `test_empty_list`, `test_positive_numbers`).
+    -   Cover a variety of scenarios, including:
+        -   Typical/expected inputs
+        -   Edge cases (e.g., empty lists, large numbers)
+        -   Boundary conditions (e.g., maximum/minimum constraints)
+    -   Ensure your tests clearly assert the expected outcomes.
+
+---
+
+## Documentation Update
+
+-   **README Table Update:**
+    -   Add an entry for the newly created problem to the table in the `README.md` file.
+    -   The entry should be placed in the correct ascending order based on the problem number (e.g., problem 3 goes after problem 2 and before problem 4).
+    -   Follow the existing table format for consistency.
+    -   ⚠️ **Reminder:** Ensure the function in the `.py` file remains a shell with `pass` and no implementation at this stage.
+
+---
+
+## Review Process
+
+-   **Implementation Review:**
+    -   When requesting a review, the expected solution will be compared with your implementation.
+    -   Feedback will be provided as if from a **Senior or Principal-level Engineer**.
+    -   The review will focus on **code efficiency, readability (Pythonic code), maintainability, and adherence to best practices**.
+    -   The function creation guidelines do **not** apply during the review process; the focus is strictly on evaluating the provided implementation.
+
+---
+
+## Optional: Teach Area — Step-by-Step Solution Guide
+
+> 🧩 _Use this only when you explicitly request to work through a problem step by step or if you ask for help._
+> By default, contributors only need to create the shell function and tests.
+> If you want to implement a solution together, follow this process:
+>
+> 1.  **Understand the Problem**
+>     -   Carefully read the problem statement.
+>     -   Identify input types, constraints, and the expected output.
+>     -   Write down any assumptions.
+> 2.  **Break Down with Examples**
+>     -   Manually work through a few sample inputs and outputs.
+>     -   Write them in comments inside your function file or in your notes.
+>     -   Identify patterns or repeated operations.
+> 3.  **Define the Approach**
+>     -   Consider brute-force methods first.
+>     -   Think about optimizations (e.g., sorting, hash maps, dynamic programming).
+>     -   Select an approach based on the problem's constraints.
+> 4.  **Write Pseudocode**
+>     -   Outline your logic in plain language or comments.
+>     -   Make sure your steps are clear enough to translate directly to code.
+> 5.  **Implement Incrementally**
+>     -   Translate your pseudocode to actual Python code.
+>     -   Test parts of your solution as you write them.
+> 6.  **Test Thoroughly**
+>     -   Use the `pytest` file to validate your function.
+>     -   Add cases for expected, edge, and boundary conditions.
+>     -   Confirm all tests pass.
+> 7.  **Refactor & Optimize**
+>     -   Review your solution for readability and efficiency.
+>     -   Refactor variable names, simplify logic, and ensure the code is clear and Pythonic.
+> 8.  **Request Review**
+>     -   Submit your implementation for review.
+>     -   Be open to feedback for improvements!
+> 9.  **Code Solution**
+>     -   Ask if a code solution needs to be created. If affirmative, please provide the solution.
+>     -   Even in an automated mode, the requested solution should be implemented **ONLY** in the chat window.
+>
+> ✅ _Tip: Document your thought process in comments during the solution phase. It helps during review and personal learning._
