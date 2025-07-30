@@ -7,6 +7,7 @@ This repository contains Python solutions for LeetCode problems, organized by pr
 | Problem | Solution | Tests | Difficulty |
 |---------|----------|-------|------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | [problem_1.py](problems/problem_1.py) | [test_1.py](tests/test_1.py) | ![Easy](https://img.shields.io/badge/-Easy-green) |
+| [3136. Valid Word](https://leetcode.com/problems/valid-word/) | [problem_3136.py](problems/problem_3136.py) | [test_3136.py](tests/test_3136.py) | ![Easy](https://img.shields.io/badge/-Easy-green) |
 
 
 ## Project Structure
@@ -15,9 +16,11 @@ This repository contains Python solutions for LeetCode problems, organized by pr
 leetcode-python/
 ├── problems/          # Problem solutions
 │   ├── __init__.py
-│   └── problem_1.py  # Two Sum
+│   ├── problem_1.py  # Two Sum
+│   └── problem_3136.py  # Valid Word
 ├── tests/            # Test files
-│   └── test_1.py     # Tests for Two Sum
+│   ├── test_1.py     # Tests for Two Sum
+│   └── test_3136.py  # Tests for Valid Word
 └── README.md         # This file
 ```
 
