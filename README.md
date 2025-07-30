@@ -4,15 +4,10 @@ This repository contains Python solutions for LeetCode problems, organized by pr
 
 ## Problems
 
-| # | Title | Difficulty | Status | Solution |
-|---|-------|------------|--------|----------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 🔴 Not Implemented | [Solution](problems/1.py) |
+| Problem | Solution | Tests | Difficulty |
+|---------|----------|-------|------------|
+| [1. Two Sum](https://leetcode.com/problems/two-sum/) | [problem_1.py](problems/problem_1.py) | [test_1.py](tests/test_1.py) | ![Easy](https://img.shields.io/badge/-Easy-green) |
 
-## Legend
-
-- 🔴 Not Implemented - Shell function created, solution pending
-- 🟡 In Progress - Solution being worked on
-- 🟢 Completed - Solution implemented and tested
 
 ## Project Structure
 
@@ -20,7 +15,7 @@ This repository contains Python solutions for LeetCode problems, organized by pr
 leetcode-python/
 ├── problems/          # Problem solutions
 │   ├── __init__.py
-│   └── 1.py          # Two Sum
+│   └── problem_1.py  # Two Sum
 ├── tests/            # Test files
 │   └── test_1.py     # Tests for Two Sum
 └── README.md         # This file
