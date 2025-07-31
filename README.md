@@ -7,6 +7,7 @@ This repository contains Python solutions for LeetCode problems, organized by pr
 | Problem | Solution | Tests | Difficulty |
 |---------|----------|-------|------------|
 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | [problem_1.py](problems/problem_1.py) | [test_1.py](tests/test_1.py) | ![Easy](https://img.shields.io/badge/-Easy-green) |
+| [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [problem_9.py](problems/problem_9.py) | [test_9.py](tests/test_9.py) | ![Easy](https://img.shields.io/badge/-Easy-green) |
 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [problem_20.py](problems/problem_20.py) | [test_20.py](tests/test_20.py) | ![Easy](https://img.shields.io/badge/-Easy-green) |
 | [3136. Valid Word](https://leetcode.com/problems/valid-word/) | [problem_3136.py](problems/problem_3136.py) | [test_3136.py](tests/test_3136.py) | ![Easy](https://img.shields.io/badge/-Easy-green) |
 
@@ -18,10 +19,12 @@ leetcode-python/
 ├── problems/          # Problem solutions
 │   ├── __init__.py
 │   ├── problem_1.py  # Two Sum
+│   ├── problem_9.py  # Palindrome Number
 │   ├── problem_20.py  # Valid Parentheses
 │   └── problem_3136.py  # Valid Word
 ├── tests/            # Test files
 │   ├── test_1.py     # Tests for Two Sum
+│   ├── test_9.py     # Tests for Palindrome Number
 │   ├── test_20.py    # Tests for Valid Parentheses
 │   └── test_3136.py  # Tests for Valid Word
 └── README.md         # This file
